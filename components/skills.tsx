@@ -53,7 +53,7 @@ export function Skills() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {Object.entries(skillsData).map(([category, skills]) => (
-            <div key={category} className="bg-card rounded-lg p-6 border border-border">
+            <div key={category} className="bg-card/40 backdrop-blur-md rounded-lg p-6 border border-border">
               <h3 className="text-lg font-semibold text-foreground mb-4 capitalize">
                 {category.replace(/([A-Z])/g, ' $1').trim()}
               </h3>

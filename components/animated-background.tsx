@@ -130,7 +130,7 @@ export function AnimatedBackground() {
   if (!isClient) return null
 
   return (
-    <div className="fixed inset-0 -z-10 bg-background overflow-hidden pointer-events-none">
+    <div className="fixed inset-0 z-0 bg-background overflow-hidden pointer-events-none">
       {/* Base Tech Pattern Texture - Subtle overlay */}
       <div 
         className="absolute inset-0 opacity-[0.25] z-0"
@@ -174,7 +174,7 @@ export function AnimatedBackground() {
         {/* AI Neural Network Canvas */}
         <canvas
           ref={canvasRef}
-          className="absolute inset-0 z-0 opacity-70"
+          className="absolute inset-0 z-0 opacity-100"
         />
 
         {/* AI Core Hologram Detail */}
@@ -216,19 +216,19 @@ export function AnimatedBackground() {
         <div className="absolute inset-0 overflow-hidden font-mono text-primary/20 select-none z-10">
           <motion.div 
             style={{ y: symbol1Y, rotate: symbol1Rotate }}
-            className="absolute top-[15%] left-[10%] text-6xl font-bold"
+            className="absolute top-[15%] left-[10%] text-6xl font-bold opacity-30"
           >
             {'</>'}
           </motion.div>
           <motion.div 
             style={{ y: symbol2Y, rotate: symbol2Rotate }}
-            className="absolute top-[40%] right-[15%] text-5xl font-bold"
+            className="absolute top-[40%] right-[15%] text-5xl font-bold opacity-30"
           >
             {'{ }'}
           </motion.div>
           <motion.div 
             style={{ y: symbol3Y, rotate: symbol3Rotate }}
-            className="absolute bottom-[20%] left-[20%] text-5xl font-bold"
+            className="absolute bottom-[20%] left-[20%] text-5xl font-bold opacity-30"
           >
             {'( )'}
           </motion.div>
@@ -236,21 +236,21 @@ export function AnimatedBackground() {
           {/* Binary Rain Snippets */}
           <motion.div 
             style={{ y: binary1Y }}
-            className="absolute top-[30%] left-[80%] text-xs opacity-40 font-mono flex flex-col items-center"
+            className="absolute top-[30%] left-[80%] text-xs opacity-70 font-mono flex flex-col items-center"
           >
-            <span>01001</span>
-            <span>10110</span>
-            <span>00111</span>
-            <span>11000</span>
+            <span className="text-primary/40">01001</span>
+            <span className="text-primary/40">10110</span>
+            <span className="text-primary/40">00111</span>
+            <span className="text-primary/40">11000</span>
           </motion.div>
 
           <motion.div 
             style={{ y: binary2Y }}
-            className="absolute top-[60%] left-[5%] text-xs opacity-30 font-mono flex flex-col items-center"
+            className="absolute top-[60%] left-[5%] text-xs opacity-60 font-mono flex flex-col items-center"
           >
-            <span>101</span>
-            <span>010</span>
-            <span>111</span>
+            <span className="text-primary/40">101</span>
+            <span className="text-primary/40">010</span>
+            <span className="text-primary/40">111</span>
           </motion.div>
         </div>
       </motion.div>

@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <AnimatedBackground />
       <Navbar />
-      <main className="min-h-screen text-foreground pt-20">
+      <main className="relative z-10 min-h-screen text-foreground pt-20">
         <Hero />
         <Skills />
         <Experience />
